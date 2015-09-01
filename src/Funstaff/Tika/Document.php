@@ -37,13 +37,13 @@ class Document implements DocumentInterface
         $this->name = $name;
         $this->path = $path;
         $this->password = $password;
-        if (!file_exists($path)) {
+        /*if (!file_exists($path)) {
             throw new \InvalidArgumentException(sprintf(
                 'Document "%s" with path "%s" does not exists.',
                 $name,
                 $path
             ));
-        }
+        }*/
     }
 
     /**
